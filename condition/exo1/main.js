@@ -1,5 +1,5 @@
-let firstNumber = prompt ("Choisissez un nombre");
-let secondNumber = prompt ("Choisissez un deuxième nombre");
-let resultNumber = firstNumber + secondNumber;
+let number = 32
 
-console.log("Voici le résultat : " + (parseInt(firstNumber)+parseInt(secondNumber)) + " et voici le calcul : " + firstNumber + " +" + secondNumber );
+if (number >21) {
+    alert("c'est plus élevé que 21 !")
+}
