@@ -1,11 +1,11 @@
 let note = prompt ("Choisissez une note")
-if (note >= 0 && note <= 3){
+if (note >= 0 && note <= 2){
     alert("Nul")
 }
-if (note >= 4 && note < 6){
+if (note >= 3 && note <= 5){
     alert("Moyen")
 }
-if (note >= 6 && note < 8){
+if (note >= 6 && note <= 7){
     alert("Assez Bien")
 }
 if (note >= 8 && note <= 9){
