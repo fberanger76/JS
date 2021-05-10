@@ -1,15 +1,14 @@
-    let password = document.getElementById("pass") ;
-    let passwordConfirm = document.getElementById("pass1") ; 
+    let password = document.getElementById("pass");
+    let passwordConfirm = document.getElementById("pass1");
     let buttonValidate = document.getElementById("validate");
 
     buttonValidate.addEventListener("click", () => {
 
-    if(password.value == passwordConfirm.value) {
-        document.getElementById("pass").style.borderColor = "green";
-        document.getElementById("pass1").style.borderColor = "green";
-    }
-    else {
-        document.getElementById("pass").style.borderColor = "red";
-        document.getElementById("pass1").style.borderColor = "red";
-    }
-})
+        if (password.value == passwordConfirm.value) {
+            pass.classList.toggle("green");
+            pass1.classList.toggle("green")
+        } else {
+            pass.classList.toggle("red");
+            pass1.classList.toggle("red")
+        }
+    })
