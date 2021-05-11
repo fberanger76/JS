@@ -6,9 +6,9 @@
 
         if (password.value == passwordConfirm.value) {
             pass.classList.toggle("green");
-            pass1.classList.toggle("green")
+            pass1.classList.toggle("green");
         } else {
             pass.classList.toggle("red");
-            pass1.classList.toggle("red")
+            pass1.classList.toggle("red");
         }
     })
