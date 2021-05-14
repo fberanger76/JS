@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 36, 73);
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+
+}
+
+header>h1 {
+    text-align: center;
+    color: rgb(36, 36, 73);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.scoreBoard {
+    border: 3px solid white;
+    width: 200px;
+    margin: 50px auto;
+    color: white;
+    font-size: 30px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+}
+
+.badge {
+    background-color: rgb(255, 217, 0);
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+#userLabel {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+#computerLabel {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+}
+
+.resultat {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.choices {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.choice {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+    border: 4px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background: white;
+    cursor: pointer;
+    border: black 4px solid;
+}
+
+#actionMessage {
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.green-ring {
+    border: 4px solid #2ecc71 !important;
+}
+
+.red-ring {
+    border: 4px solid #e74c3c !important;
+}
+
+.gray-ring {
+    border: 4px solid #ecf0f1 !important;
+}
