@@ -19,7 +19,6 @@ function win(user, computer){
     userScore++;
     userScoreSpan.innerHTML=userScore;
     resultat.innerHTML = `${choix[user]} contre ${choix[computer]} : <br>Bravo, c'est gagné !`;
-    
 }
 
 function lose(user, computer){
@@ -39,7 +38,7 @@ function game(user) {
         case "pc":
         case "fp":
         case "cf":
-            win(user, computer)
+            win(user, computer);
             break;
         case "cp":
         case "pf":
@@ -69,3 +68,39 @@ function main(){
 }
 
 main();
+
+$( "#rock" ).click(function() {
+    $( "#rock" ).animate({
+      opacity: 0.4,
+    }, 1500 );
+    $( "#paper" ).animate({
+        opacity: 1,
+      }, 1500 );
+      $( "#scissors" ).animate({
+        opacity: 1,
+      }, 1500 );
+  });
+
+  $( "#paper" ).click(function() {
+    $( "#paper" ).animate({
+      opacity: 0.4,
+    }, 1500 );
+    $( "#scissors" ).animate({
+        opacity: 1,
+      }, 1500 );
+      $( "#rock" ).animate({
+        opacity: 1,
+      }, 1500 );
+  });
+
+  $( "#scissors" ).click(function() {
+    $( "#scissors" ).animate({
+      opacity: 0.4,
+    }, 1500 );
+    $( "#rock" ).animate({
+        opacity: 1,
+      }, 1500 );
+      $( "#paper" ).animate({
+        opacity: 1,
+      }, 1500 );
+  });
