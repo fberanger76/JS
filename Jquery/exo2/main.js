@@ -15,7 +15,7 @@ $("#validate").click(() => {
         $("#moyenne").text(moyenneNotes + " Bien");
     } else if (moyenneNotes >= 16 && moyenneNotes < 20) {
         $("#moyenne").text(moyenneNotes + " Très bien");
-    } else if(moyenneNotes == 20) {
+    } else {
         $("#moyenne").text(moyenneNotes + " Excellent");
     }
 })
